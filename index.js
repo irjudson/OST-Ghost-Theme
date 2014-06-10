@@ -2,6 +2,7 @@
 // Orchestrates the loading of Ghost
 // When run from command line.
 
+
 var ghost = require('./core'),
     errors = require('./core/server/errorHandling');
 

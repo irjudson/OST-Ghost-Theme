@@ -9,7 +9,7 @@ config = {
     // ### Development **(default)**
     development: {
         // The url to use when providing links to the site, E.g. in RSS and email.
-        url: 'http://irjudson-blog.azurewebsites.com',
+        url: 'http://irjt1.azurewebsites.com',
         mail: {},
         // Example mail config
         // Visit http://docs.ghost.org/mail for instructions
@@ -35,9 +35,9 @@ config = {
         },
         server: {
             // Host to be passed to node's `net.Server#listen()`
-            host: '0.0.0.0',
+            host: '127.0.0.1',
             // Port to be passed to node's `net.Server#listen()`, for iisnode set this to `process.env.PORT`
-            port: 80
+            port: process.env.PORT || '2368'
         },
         paths: {
             contentPath: path.join(__dirname, '/content/')
@@ -48,7 +48,7 @@ config = {
     // When running Ghost in the wild, use the production environment
     // Configure your URL and mail settings here
     production: {
-        url: 'http://irjudson-blog.azurewebsites.com',
+        url: 'http://irjt1.azurewebsites.com',
         mail: {},
         database: {
             client: 'sqlite3',

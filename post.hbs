@@ -54,24 +54,6 @@
 							</a>
 							</div>
 						</div>
-
-						{{#if author}}
-							<div class="clearfix" id="ost-post-author" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person">
-								<h3 class="sr-only">Author</h3>
-								{{#if author.image}}
-									<img src="{{author.image}}" class="author-avatar" alt="{{author.name}}">
-								{{/if}}
-								<div class="author-details">
-									<h4 itemprop="name">{{author.name}}</h4>
-									<p>{{author.bio}}</p>
-									{{#if author.website}}
-										<p><a href="{{author.website}}" rel="author" itemprop="url">Vist Site</a></p>
-									{{/if}}
-								</div>
-							</div>
-						{{/if}}
-
-
 					</footer>
 
 				</article>

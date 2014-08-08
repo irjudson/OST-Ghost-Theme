@@ -11,6 +11,13 @@ Brown: 		#69605C;
 Blue: 		#3897CC;
 Orange: 	#F28A3E;
 Yellow: 	#FABC43;
+
+Black: #0D0F0E
+Gray: #485B59;
+Red: #F05151
+Pink: #F4836C
+White: #F1F5F2
+
 */
 
 /*-----------------------------------------------------------------------------------*/
@@ -18,12 +25,12 @@ Yellow: 	#FABC43;
 /*-----------------------------------------------------------------------------------*/
 
 a {
-	color: #3897CC;
+	color: #485B59;
 }
 
 a:hover,
 a:active {
-	color: #F28A3E;
+	color: #F4836C;
 }
 
 
@@ -32,12 +39,12 @@ a:active {
 /*-----------------------------------------------------------------------------------*/
 
 #ost-site-header {
-	padding: 100px 0 100px;
+	padding-top: 50px;
 
 }
 
 .description {
-	color: #F28A3E;
+	color: #F4836C;
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -52,12 +59,12 @@ a:active {
 }
 
 .navbar-default .navbar-nav>li>a {
-	color: #69605C;
+	color: #0D0F0E;
 }
 
 .navbar-default .navbar-nav>li>a:hover, 
 .navbar-default .navbar-nav>li>a:focus {
-	color: #F28A3E;
+	color: #F4836C;
 }
 
 .nav-social>li {
@@ -72,7 +79,7 @@ a:active {
 article.post {
 	background-color: rgb(255, 255, 255); /* Fall-back for browsers that don't support rgba */
 	background-color: rgba(255, 255, 255, .5);
-	padding: 15px 15px 50px;
+	padding: 15px 15px 15px;
 	margin-bottom: 50px;
 	border: 1px solid #FFF;
 }
@@ -115,9 +122,15 @@ article h2.post-title {
 	width: 100%;
 }
 
+.post-content pre code {
+    overflow: auto;
+    word-wrap: normal;
+    white-space: pre;
+}
+
 .post-meta {
 	padding: 0 0 25px;
-	color: #F28A3E;
+	color: #F4836C;
 }
 
 .tags a {
@@ -126,7 +139,7 @@ article h2.post-title {
 
 .tags a:before {
 	content: " • ";
-	color: #F28A3E;
+	color: #F4836C;
 }
 
 .tags a:first-child:before {
@@ -144,10 +157,10 @@ article h2.post-title {
 /*-----------------------------------------------------------------------------------*/
 
 .post-footer {
-	margin: 50px -15px -50px;
-	padding: 15px;
+	padding-top: 15px;
 	border-top: 1px solid #69605C;
 }
+
 
 #ost-post-share h5 {
 	display: inline-block;
@@ -195,7 +208,7 @@ article h2.post-title {
 }
 
 #ost-site-footer p a {
-	color: #F28A3E;
+	color: #F4836C;
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -221,13 +234,8 @@ article h2.post-title {
 
 @media only screen and (min-width: 768px) {
 
-	article.post {
-		padding: 50px;
-	}
-
 	.post-footer {
-		margin: 50px -50px -50px;
-		padding: 50px;
+		padding-top: 15px;
 		border-top: 1px solid #69605C;
 	}
 
